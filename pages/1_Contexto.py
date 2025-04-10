@@ -14,15 +14,4 @@ El objetivo final es construir una base visual y analítica que facilite la inte
 """)
 
 imagen = Image.open("image.png")
-imagen.save("temp_img.png")
-
-# Usas HTML para centrar y controlar el tamaño
-st.markdown(
-    """
-    <div style='text-align: center;'>
-        <img src='temp_img.png' width='600'>
-        <p style='font-style: italic; color: gray;'>Mapa de Colombia</p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+st.image(imagen, caption="Mapa de Colombia", width=600)
