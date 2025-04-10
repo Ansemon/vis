@@ -15,4 +15,5 @@ RUN pip install -r requirements.txt
 EXPOSE 8501
 
 # Comando para ejecutar la app
-CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.enableCORS=false"]
+CMD ["streamlit", "run", "launcher.py", "--server.port=8501", "--server.address=0.0.0.0"]
+
